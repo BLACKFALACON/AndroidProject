@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+   >
+
+    <LinearLayout
+        android:id="@+id/ac_login_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="212dp"
+            android:layout_height="188dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/i"
+            tools:srcCompat="@drawable/i" />
+        <EditText
+            android:id="@+id/ac_login_edt_username"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="2dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/username"
+            android:layout_marginStart="75dp" />
+
+        <EditText
+            android:id="@+id/ac_login_edt_password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorWhite"
+            android:layout_marginStart="75dp"
+            android:hint="@string/password" />
+
+        <Button
+            android:id="@+id/ac_login_btn_giris"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorWhite"
+            android:layout_marginStart="75dp"
+            android:textSize="30dp"
+            android:text="@string/girisYap" />
+
+    </LinearLayout>
+
+</LinearLayout>

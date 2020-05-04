@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AtlantaFalacons.iml" filepath="$PROJECT_DIR$/.idea/AtlantaFalacons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Odev.iml" filepath="$PROJECT_DIR$/Odev.iml" group="Odev" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Odev/app" />
+    </modules>
+  </component>
+</project>
