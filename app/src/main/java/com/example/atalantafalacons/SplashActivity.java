@@ -12,20 +12,20 @@ import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private ImageView imgLogo;
-    private static int Gecis_Suresi = 4000; // 4 Saniye
-    private TextView txtHosgeldiniz;
+    private ImageView karsilamaImg;
+    private static int beklemeSursei = 4000; // 4 Saniye
+    private TextView karsilamaMetni;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        imgLogo = findViewById(R.id.imgLogo);
-        txtHosgeldiniz = findViewById(R.id.ac_splash_hosgeldiniz);
+        karsilamaImg = findViewById(R.id.ac_splash_img);
+        karsilamaMetni = findViewById(R.id.ac_splash_text);
 
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.animation);
-        imgLogo.startAnimation(animation);
+        karsilamaImg.startAnimation(animation);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -33,8 +33,8 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(gecis);
                 finish();
             }
-        },Gecis_Suresi);
-        txtHosgeldiniz.startAnimation(animation);
+        },beklemeSursei);
+        karsilamaMetni.startAnimation(animation);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -42,7 +42,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(gecis);
                 finish();
             }
-        },Gecis_Suresi);
+        },beklemeSursei);
 
     }
 }

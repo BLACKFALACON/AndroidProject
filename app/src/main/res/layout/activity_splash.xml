@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imgLogo"
+        android:id="@+id/ac_splash_img"
         android:layout_width="212dp"
         android:layout_height="188dp"
         android:layout_centerHorizontal="true"
@@ -19,7 +19,7 @@
         tools:srcCompat="@drawable/i" />
 
     <TextView
-        android:id="@+id/ac_splash_hosgeldiniz"
+        android:id="@+id/ac_splash_text"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_marginLeft="40dp"

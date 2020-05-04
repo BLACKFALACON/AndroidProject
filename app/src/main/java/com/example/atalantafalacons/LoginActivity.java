@@ -11,32 +11,32 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText edtUsername;
-    EditText edtPassword;
-    Button btnGiris;
+    EditText Username;
+    EditText Password;
+    Button Giris;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        edtUsername = findViewById(R.id.ac_login_edt_username);
-        edtPassword = findViewById(R.id.ac_login_edt_password);
-        btnGiris = findViewById(R.id.ac_login_btn_giris);
+        Username = findViewById(R.id.ac_login_username);
+        Password = findViewById(R.id.ac_login_password);
+        Giris = findViewById(R.id.ac_login_giris);
 
-        btnGiris.setOnClickListener(new View.OnClickListener() {
+        Giris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = edtUsername.getText().toString();
-                String password = edtPassword.getText().toString();
+                String username = Username.getText().toString();
+                String password = Password.getText().toString();
 
-                if (username.equals("admin") && password.equals("admin")) {
+                if (username.equals("shn") && password.equals("1234")) {
                     Toast.makeText(LoginActivity.this,"Başarıyla giriş yaptınız.",Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intent);
                 }
                 if (!username.equals("admin") || !password.equals("admin")) {
-                    Toast.makeText(LoginActivity.this,"Kullanıcı adınız veya şifreniz yanlış.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this,"Kullanıcı adı veya şifre hatalı.",Toast.LENGTH_LONG).show();
                 }
 
             }

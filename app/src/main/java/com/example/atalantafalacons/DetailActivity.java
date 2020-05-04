@@ -8,23 +8,23 @@ import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
 
-    TextView tvHeader,tvDescription;
+    TextView Header,Description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        tvHeader = findViewById(R.id.ac_detail_header);
-        tvDescription = findViewById(R.id.ac_detail_description);
+        Header = findViewById(R.id.ac_detail_header);
+        Description = findViewById(R.id.ac_detail_description);
 
         Intent getData = getIntent();
 
         String header = getData.getStringExtra("HEADER");
         String description = getData.getStringExtra("DESCRIPTION");
 
-        tvHeader.setText(header);
-        tvDescription.setText(description);
+        Header.setText(header);
+        Description.setText(description);
 
     }
 }

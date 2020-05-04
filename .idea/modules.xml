@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AtlantaFalacons.iml" filepath="$PROJECT_DIR$/.idea/AtlantaFalacons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Odev.iml" filepath="$PROJECT_DIR$/Odev.iml" group="Odev" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Odev/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AtlantaFalacons.iml" filepath="$PROJECT_DIR$/.idea/AtlantaFalacons.iml" group="AtlantaFalacons" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AtlantaFalacons/app" />
     </modules>
   </component>
 </project>
